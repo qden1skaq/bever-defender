@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Всемирная Корпорация Защиты Бобров!!!</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link
@@ -15,6 +15,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .water-wave::after {
       content: "";
       position: absolute;
@@ -27,6 +28,7 @@
       animation: wave 15s linear infinite;
       z-index: 10;
     }
+
     @keyframes wave {
       0% {
         transform: translateX(0);
@@ -40,6 +42,7 @@
     .beaver-float {
       animation: float 6s ease-in-out infinite;
     }
+
     @keyframes float {
       0% {
         transform: translateY(0px) rotate(0deg);
@@ -57,11 +60,13 @@
       position: absolute;
       opacity: 0;
     }
+
     .custom-checkbox + label {
       position: relative;
       cursor: pointer;
       padding-left: 2rem;
     }
+
     .custom-checkbox + label:before {
       content: "";
       position: absolute;
@@ -73,6 +78,7 @@
       border-radius: 4px;
       background: white;
     }
+
     .custom-checkbox:checked + label:after {
       content: "✓";
       position: absolute;
@@ -93,6 +99,7 @@
       gap: 0.5rem;
       z-index: 1000;
     }
+
     #commit-buttons button {
       background-color: #3b82f6;
       color: white;
@@ -103,9 +110,11 @@
       cursor: pointer;
       transition: background-color 0.2s;
     }
+
     #commit-buttons button:hover {
       background-color: #2563eb;
     }
+
     #mission {
       margin-top: 10px;
     }
@@ -497,3 +506,144 @@
     </div>
   </div>
 </section>
+
+
+<!-- Footer -->
+<footer id="site-footer" class="bg-emerald-800 text-white py-12">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center space-x-2 mb-4">
+          <i class="fas fa-paw text-2xl"></i>
+          <span class="text-xl font-bold">BeaverGuard</span>
+        </div>
+        <p class="text-emerald-200">
+          Международная корпорация по защите бобров и их среды обитания с 1995
+          года.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold mb-4">Навигация</h4>
+        <ul class="space-y-2">
+          <li>
+            <a
+                    href="#mission"
+                    class="text-emerald-300 hover:text-white transition"
+            >Миссия</a
+            >
+          </li>
+          <li>
+            <a
+                    href="#projects"
+                    class="text-emerald-300 hover:text-white transition"
+            >Проекты</a
+            >
+          </li>
+          <li>
+            <a
+                    href="#facts"
+                    class="text-emerald-300 hover:text-white transition"
+            >Факты</a
+            >
+          </li>
+          <li>
+            <a
+                    href="#join"
+                    class="text-emerald-300 hover:text-white transition"
+            >Присоединиться</a
+            >
+          </li>
+
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold mb-4">Ресурсы</h4>
+        <ul class="space-y-2">
+          <li>
+            <a
+                    href="#"
+                    class="text-emerald-300 hover:text-white transition"
+            >Блог</a
+            >
+          </li>
+          <li>
+            <a
+                    href="#"
+                    class="text-emerald-300 hover:text-white transition"
+            >Отчеты</a
+            >
+          </li>
+          <li>
+            <a
+                    href="#"
+                    class="text-emerald-300 hover:text-white transition"
+            >Исследования</a
+            >
+          </li>
+          <li>
+            <a
+                    href="#"
+                    class="text-emerald-300 hover:text-white transition"
+            >Фотоархив</a
+            >
+          </li>
+          <li>
+            <a
+                    href="#"
+                    class="text-emerald-300 hover:text-white transition"
+            >FAQ</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold mb-4">Подписаться на новости</h4>
+        <form class="flex mb-4">
+          <input
+                  type="email"
+                  placeholder="Ваш email"
+                  class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800"
+          />
+          <button
+                  type="submit"
+                  class="bg-emerald-500 hover:bg-emerald-600 px-4 py-2 rounded-r-lg transition"
+          >
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+        <p class="text-sm text-emerald-300">
+          Будьте в курсе наших проектов и акций.
+        </p>
+      </div>
+    </div>
+
+    <div
+            class="border-t border-emerald-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+    >
+      <p class="text-emerald-300 text-sm mb-4 md:mb-0">
+        © 2023 BeaverGuard International. Все права защищены.
+      </p>
+      <div class="flex space-x-6">
+        <a href="#" class="text-emerald-300 hover:text-white transition"
+        ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="#" class="text-emerald-300 hover:text-white transition"
+        ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="#" class="text-emerald-300 hover:text-white transition"
+        ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="#" class="text-emerald-300 hover:text-white transition"
+        ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="#" class="text-emerald-300 hover:text-white transition"
+        ><i class="fab fa-youtube"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
